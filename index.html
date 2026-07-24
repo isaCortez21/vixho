@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Feliz Cumpleaños</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ===== PORTADA ===== -->
+
+    <section id="inicio">
+
+    <div class="contenido-inicio">
+
+        <h1>¡Feliz Cumpleaños mi niño! 🎉</h1>
+
+        <p>
+            Hoy quice hacerle algo especial
+            ...Un pequeño detalle que pueda recordar
+        </p>
+
+        <p>
+            ¿Está listo?
+        </p>
+
+        <div class="flecha">
+            ↓
+        </div>
+
+    </div>
+
+</section>
+
+
+    <!-- ===== RECUERDOS ===== -->
+
+    <section id="recuerdos">
+
+    <div class="contenedor-recuerdos">
+
+        <h2>Nuestros recuerdos ❤️</h2>
+
+        <p>
+            Cada momento contigo es una historia que quiero seguir escribiendo.
+        </p>
+
+
+       <div class="galeria">
+
+    <div class="foto">
+        <img src="img/1.png" alt="Nuestro recuerdo 1">
+        <p>Un momento especial ❤️</p>
+    </div>
+
+    <div class="foto">
+        <img src="img/2.png" alt="Nuestro recuerdo 2">
+        <p>Un recuerdo que guardo con cariño</p>
+    </div>
+
+    <div class="foto">
+        <img src="img/3.png" alt="Nuestro recuerdo 3">
+        <p>Más aventuras juntos ✨</p>
+    </div>
+
+    <div class="foto">
+        <img src="img/4.png" alt="Nuestro recuerdo 4">
+        <p>Y todavía quedan muchos kilómetros por recorrer 🚗</p>
+    </div>
+
+</div>
+
+    </div>
+
+</section>
+
+
+
+    <!-- ===== MENSAJE ===== -->
+
+<section id="mensaje">
+
+    <div class="carta">
+
+        <h2>Un pequeño recordatorio... ❤️</h2>
+
+        <p>
+            Hoy es un día especial no solo para usted, sino también para mí. 
+            Hoy cumple un año más de vida y le agredesco a Dios de tenerlo a mi lado.
+        </p>
+
+        <p>
+            Gracias por cada sonrisa, cada momento y cada recuerdo
+            que hemos creado juntos.
+        </p>
+
+        <p>
+            Espero que este pequeño detalle le recuerde lo mucho
+            que significa para mí y que jamás se olvide del gran hombre en el
+            que se está convirtiendo.
+        </p>
+
+        <h3>
+           ¡Feliz cumpleaños mi niño! . 🎂❤️
+        </h3>
+
+    </div>
+
+
+</section>
+
+<div class="contenedor">
+
+    <h1 id="tituloPrincipal">
+    🏁 Desafío: ¿Se considera "fanático" de los deportivos clásicos?
+    </h1>
+
+
+    <div class="reglas">
+
+        <h2>📜 Reglas</h2>
+
+        <p>🚗 Tendrás que identificar 10 autos.</p>
+
+        <p>⏱️ Dispones de 2 minutos.</p>
+
+        <p>❌ Cada respuesta incorrecta resta 15 segundos.</p>
+
+        <p>❤️ Tienes 2 oportunidades para completar el desafío.</p>
+
+        <p>🎟️ Si acierta los 10 autos podrás obtener el cupón.</p>
+
+        <p>⚠️ Si falla alguno o se acaba el tiempo, el cupón desaparece.</p>
+
+    </div>
+
+
+    <button id="botonInicio">
+        🏎️ Comenzar
+    </button>
+
+
+
+    <div id="juego" style="display:none;">
+
+        <h2 id="contador">
+            Pregunta 1/10
+        </h2>
+
+
+        <div id="tiempo">
+            ⏱️ Tiempo: 120
+        </div>
+
+
+        <div id="vidas">
+            ❤️❤️ Oportunidades: 2
+        </div>
+
+
+        <img id="imagenAuto" width="400">
+
+
+        <h2 id="pregunta">
+            ¿Qué auto es este?
+        </h2>
+
+
+        <div id="opciones"></div>
+
+
+        <div id="resultado"></div>
+
+
+    </div>
+
+
+
+
+    <div id="finJuego" style="display:none;">
+
+        <h2>
+            💀 Desafío fallido
+        </h2>
+
+
+        <p>
+            Se acabaron tus oportunidades.
+        </p>
+
+
+        <button onclick="location.reload()">
+            🔄 Intentar nuevamente
+        </button>
+
+
+    </div>
+
+<div id="premio" style="display:none;">
+
+    <h1>🏆 ¡INCREÍBLE!</h1>
+
+    <p>
+        Ha demostrado conocimiento en los deportivos clásicos.
+    </p>
+
+    <p>
+        🚗 Su recompensa lo espera...
+    </p>
+
+    <button onclick="mostrarCupon()">
+        🔑 Abrir
+    </button>
+
+</div>
+
+<div id="desbloqueo" style="display:none;">
+
+    <div class="llave">
+        🔑
+    </div>
+
+    <h2>Desbloqueando premio...</h2>
+
+</div>
+
+<div id="cupon" style="display:none;">
+
+    <h1>🎟️ CUPÓN GANADOR 🎟️</h1>
+
+    <div id="contenidoCupon"></div>
+
+</div>
+
+</div>
+
+    <!-- ===== CUPÓN ===== -->
+
+    <section id="cupon">
+
+        <h2>Premio</h2>
+
+    </section>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

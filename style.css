@@ -1,0 +1,471 @@
+/* Configuración general */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body { font-family: Arial, sans-serif; background-image: linear-gradient( rgba(0,0,0,0.6), rgba(0,0,0,0.8) ), url("img/fondo.png"); background-size: cover; background-position: center; background-attachment: fixed; color: white; }
+
+/* Cada sección ocupará una pantalla completa */
+
+section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+}
+
+
+/* Títulos */
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+
+p {
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+/* PORTADA */
+
+#inicio {
+    background-image: 
+    linear-gradient(
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.8)
+    ),
+    url("img/portada.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+
+
+}
+
+
+.contenido-inicio {
+    max-width: 800px;
+}
+
+
+#inicio h1 {
+    font-size: 65px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+
+#inicio p {
+    margin-top: 25px;
+    line-height: 1.6;
+}
+
+
+/* Flecha para bajar */
+
+.flecha {
+
+    margin-top: 50px;
+    font-size: 50px;
+
+    animation: bajar 1.5s infinite;
+
+}
+
+
+@keyframes bajar {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
+
+/* SECCIÓN RECUERDOS */
+
+#recuerdos {
+
+    background: #080808;
+
+}
+
+
+.contenedor-recuerdos {
+
+    width: 90%;
+    max-width: 1200px;
+
+}
+
+
+.contenedor-recuerdos h2 {
+
+    margin-bottom: 20px;
+
+}
+
+
+
+.galeria {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+    width: 100%;
+
+}
+
+
+.foto {
+
+    background: #111;
+    padding: 15px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 0 20px rgba(255,0,80,0.3);
+
+    transition: transform 0.3s;
+
+}
+
+
+.foto img {
+
+    width: 100%;
+    height: 550px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+
+}
+
+
+.foto p {
+
+    font-size: 16px;
+    margin-top: 15px;
+
+}
+
+.foto:hover {
+
+    transform: scale(1.05);
+
+}
+
+/* MENSAJE */
+
+#mensaje {
+
+    background: #050505;
+
+}
+
+
+.carta {
+
+    max-width: 800px;
+    background: #111;
+    padding: 50px;
+    border-radius: 20px;
+
+    box-shadow: 0 0 30px rgba(255,0,80,0.3);
+
+}
+
+
+.carta h2 {
+
+    margin-bottom: 30px;
+
+}
+
+
+.carta p {
+
+    font-size: 22px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+
+}
+
+
+.carta h3 {
+
+    margin-top: 30px;
+    font-size: 35px;
+
+}
+
+
+
+
+.contenedor {
+
+    width: 80%;
+
+    margin: 50px auto;
+
+}
+
+
+
+.contenedor h1 {
+
+    font-size: 35px;
+
+    color: #ffcc00;
+
+}
+
+
+
+.reglas {
+
+    background: #222;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    margin-top: 30px;
+
+}
+
+
+
+.reglas p {
+
+    font-size: 20px;
+
+}
+
+
+
+button {
+
+    margin-top: 35px;
+
+    padding: 15px 35px;
+
+    font-size: 22px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #ff0000;
+
+    color: white;
+
+    cursor: pointer;
+
+}
+
+
+
+button:hover {
+
+    transform: scale(1.1);
+
+}
+
+#premio{
+
+    display:none;
+
+    margin-top:40px;
+
+    animation: aparecer 1s;
+
+}
+
+
+#cupon{
+
+    display:none;
+
+    width:700px;
+
+    margin:40px auto;
+
+    background:linear-gradient(135deg,#1b1b1b,#420000);
+
+    border:4px dashed gold;
+
+    border-radius:25px;
+
+    padding:40px;
+
+    color:white;
+
+    box-shadow:0 0 40px gold;
+
+    animation: abrirCupon .8s ease;
+
+}
+
+
+#cupon h1{
+
+    color:gold;
+
+    font-size:42px;
+
+}
+
+
+#cupon h2{
+
+    color:#ff4444;
+
+}
+
+
+#cupon hr{
+
+    border:1px solid gold;
+
+    margin:25px 0;
+
+}
+
+
+#contenidoCupon{
+
+    font-size:22px;
+
+    line-height:1.8;
+
+}
+
+
+@keyframes aparecer{
+
+    from{
+
+        opacity:0;
+        transform:scale(.7);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:scale(1);
+
+    }
+
+}
+
+#desbloqueo{
+
+    display:none;
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,.92);
+
+    z-index:999;
+
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+
+}
+
+
+.llave{
+
+    font-size:90px;
+
+    animation:girar 1s infinite linear;
+
+}
+
+
+#desbloqueo h2{
+
+    color:white;
+
+    margin-top:30px;
+
+    font-size:35px;
+
+}
+
+
+@keyframes girar{
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+@keyframes abrirCupon{
+
+    0%{
+
+        transform:scale(.2) rotate(-15deg);
+
+        opacity:0;
+
+    }
+
+    70%{
+
+        transform:scale(1.08) rotate(2deg);
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        transform:scale(1) rotate(0);
+
+    }
+
+}
