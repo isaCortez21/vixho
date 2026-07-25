@@ -10,7 +10,7 @@ html {
     scroll-behavior: smooth;
 }
 
-body { font-family: Arial, sans-serif; background-image: linear-gradient( rgba(0,0,0,0.6), rgba(0,0,0,0.8) ), url("img/fondo.png"); background-size: cover; background-position: center; background-attachment: fixed; color: white; }
+body { font-family: Arial, sans-serif; background-image: linear-gradient( rgba(0, 0, 0, 0), rgba(0,0,0,0.8) ), url("img/fondo.png"); background-size: cover; background-position: center; background-attachment: fixed; color: white; }
 
 /* Cada sección ocupará una pantalla completa */
 
