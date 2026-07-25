@@ -469,3 +469,64 @@ button:hover {
     }
 
 }
+
+
+
+
+
+
+
+
+
+/* ====================================================
+   MÁQUINA DEL TIEMPO: ADAPTACIÓN PARA CELULARES
+   ==================================================== */
+
+@media (max-width: 768px) {
+    /* 1. Reducir los textos gigantes en pantallas chicas */
+    h1, #inicio h1 {
+        font-size: 32px !important;
+        letter-spacing: 1px;
+    }
+    h2, #cupon h1 {
+        font-size: 26px !important;
+    }
+    p, .carta p, .reglas p, #contenidoCupon {
+        font-size: 16px !important;
+        line-height: 1.5;
+    }
+    h3 {
+        font-size: 22px !important;
+    }
+
+    /* 2. Ajustar los espacios generales de las secciones */
+    section, .contenedor {
+        padding: 20px !important;
+        width: 100% !important;
+        margin: 20px auto !important;
+    }
+
+    /* 3. Convertir la galería de 2 columnas a 1 sola columna */
+    .galeria {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+    }
+
+    /* 4. Corregir la altura de las imágenes para que no se estiren */
+    .foto img {
+        height: 280px !important; /* Altura perfecta para pantallas de celular */
+    }
+
+    /* 5. Ajustar las tarjetas de texto y el cupón de premio */
+    .carta, #cupon {
+        padding: 25px !important;
+        width: 95% !important;
+        margin: 20px auto !important;
+    }
+    
+    /* 6. Ajustar la imagen del juego de autos */
+    #imagenAuto {
+        width: 100% !important;
+        height: auto !important;
+    }
+}
